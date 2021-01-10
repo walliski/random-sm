@@ -18,7 +18,7 @@ public Plugin:myinfo =
     url = "https://github.com/walliski/random-sm"
 }
 
-#define PREFIX "{default}[{red}Map{default}] "
+#define PREFIX "{lime}MAP{grey} | "
 
 public OnPluginStart()
 {
@@ -41,18 +41,18 @@ public Action:CheckRemainingTime(Handle:timer)
 
         switch(timeleft)
         {
-            case 1800: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 30 minutes");
-            case 1200: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 20 minutes");
-            case 600: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 10 minutes");
-            case 300: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 5 minutes");
-            case 120: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 2 minutes");
-            case 60: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 1 minute");
-            case 30: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 30 seconds");
-            case 15: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 15 seconds");
-            case 10: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: 10 seconds");
-            case -1: CPrintToChatAll("%s%s", PREFIX, "3..");
-            case -2: CPrintToChatAll("%s%s", PREFIX, "2..");
-            case -3: CPrintToChatAll("%s%s", PREFIX, "1..");
+            case 1800: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}30 {grey}minutes");
+            case 1200: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}20 {grey}minutes");
+            case 600: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}10 {grey}minutes");
+            case 300: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}5 {grey}minutes");
+            case 120: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}2 {grey}minutes");
+            case 60: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}1 {grey}minute");
+            case 30: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}30 {grey}seconds");
+            case 15: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}15 {grey}seconds");
+            case 10: CPrintToChatAll("%s%s", PREFIX, "Time Remaining: {blue}10 {grey}seconds");
+            case -1: CPrintToChatAll("%s%s", PREFIX, "{blue}3{grey}...");
+            case -2: CPrintToChatAll("%s%s", PREFIX, "{blue}2{grey}...");
+            case -3: CPrintToChatAll("%s%s", PREFIX, "{blue}1{grey}...");
         }
     }
 }

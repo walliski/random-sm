@@ -26,8 +26,10 @@ public Action:CheckRemainingTime(Handle:timer)
     new Handle:hTmp;
     hTmp = FindConVar("mp_timelimit");
     new iTimeLimit = GetConVarInt(hTmp);
+
     if (hTmp != INVALID_HANDLE)
         CloseHandle(hTmp);
+
     if (iTimeLimit > 0)
     {
         new timeleft;
@@ -40,9 +42,10 @@ public Action:CheckRemainingTime(Handle:timer)
             case 600: PrintToChatAll("Time Remaining: 10 minutes");
             case 300: PrintToChatAll("Time Remaining: 5 minutes");
             case 120: PrintToChatAll("Time Remaining: 2 minutes");
-            case 60: PrintToChatAll("Time Remaining: 60 seconds");
+            case 60: PrintToChatAll("Time Remaining: 1 minute");
             case 30: PrintToChatAll("Time Remaining: 30 seconds");
             case 15: PrintToChatAll("Time Remaining: 15 seconds");
+            case 10: PrintToChatAll("Time Remaining: 10 seconds");
             case -1: PrintToChatAll("3..");
             case -2: PrintToChatAll("2..");
             case -3: PrintToChatAll("1..");

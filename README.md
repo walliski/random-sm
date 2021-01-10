@@ -17,3 +17,7 @@ A small plugin that allows you to easily add or remove minutes from timelimit.
 Usage: `sm_extend <minutes>`, where minutes is a positive or negative integer. Example:
 * `sm_extend 10` adds 10 minutes to map time.
 * `sm_extend -5` removes 5 minutes from map time.¨
+
+## Timeleft Announcer
+
+Spams the chat in the server with remaining time. For example "5 minutes remaining", "1 minute remaining" etc.

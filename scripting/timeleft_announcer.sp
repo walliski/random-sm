@@ -9,11 +9,11 @@
 
 public Plugin:myinfo =
 {
-    name = "Timeleft in Chat",
-    author = "",
-    description = "Displays time remaining in chat for GOKZ",
+    name = "Timeleft Announcer",
+    author = "Tantan (Modified by Walliski)",
+    description = "Displays time remaining in chat",
     version = "1.0",
-    url = ""
+    url = "https://github.com/walliski/random-sm"
 }
 
 public OnPluginStart()

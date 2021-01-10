@@ -4,6 +4,14 @@
     Creates a sm_extend command that allows you to add/remove minutes from timelimit.
 */
 
+public Plugin:myinfo =
+{
+    name = "SM Extend",
+    author = "Bacardi (MOdified by Walliski)",
+    description = "Extend map time with sm_extend command.",
+    version = "1.0",
+    url = "https://github.com/walliski/random-sm"
+}
 
 new Handle:mp_timelimit = INVALID_HANDLE;
 new timelimit;

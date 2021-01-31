@@ -2,6 +2,11 @@
 
 A collection of small Sourcemod plugins for CS:GO, that I am too lazy to make own repositories for.
 
+## Kick None-VIP
+
+Kicks players that do not have the RESERVED admin flag when they connect. Will use a message from translation file,
+which can be customized, and obviously translated.
+
 ## Kick on Connect
 
 Kicks players when they attempt to join the server, and shows a message as the disconnect reason. This is useful if you

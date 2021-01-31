@@ -1,0 +1,7 @@
+"Phrases"
+{
+	"Kick Message"
+	{
+		"en"		"This server is for VIP players only."
+	}
+}
